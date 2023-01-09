@@ -8,19 +8,8 @@ const timeDate = document.querySelector('#hdte')
 const send1 = document.getElementsByClassName('mapboxgl-ctrl-geocoder--input')
 const maybe = document.nodeValue
 let date = Date()
-//= Date.now() = new Date(2012, 1, 20, 3, 12)
+
 timeDate.textContent = date
-// const banner = new Image()
-// const loading = new Image()
-// const bannerElement = document.getElementById('banner') // assumes an element with id "banner" contains the banner image - you can get the element however you want.
-// banner.src = '/img/'
-// loading.src = '/img/load.gif'
-// banner.onload = function () {
-//   bannerElement.removeChild(bannerElement.lastChild)
-//   bannerElement.appendChild(banner)
-// }
-// bannerElement.removeChild(bannerElement.lastChild)
-// bannerElement.appendChild(loading)
 
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()
@@ -63,15 +52,6 @@ weatherForm.addEventListener('submit', (e) => {
             },
           })
         })
-        // mapboxgl.accessToken =
-        //   'pk.eyJ1IjoiZ2FyaWFyIiwiYSI6ImNsYzllOXJhNDBqYzQ0MWxoc2R1dWx3YTQifQ.SpNo4jzxSEGBx6buxk3g1g'
-        // const map = new mapboxgl.Map({
-        //   container: 'map',
-        //   // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        //   style: 'mapbox://styles/mapbox/streets-v12',
-        //   center: [data.long, data.lat],
-        //   zoom: 13,
-        // })
 
         msgOne.textContent = data.location
         msgTwo.textContent = data.forecast
