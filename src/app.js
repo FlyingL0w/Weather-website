@@ -23,6 +23,7 @@ hbs.registerPartials(partialsPath)
 
 // Set static
 app.use(express.static(root))
+const port = peocess.env.PORT || 8080
 
 // Start call
 app.get('', (req, res) => {
@@ -112,7 +113,7 @@ app.get('*', (req, res) => {
   })
 })
 
-app.listen(8080, () => {
-  console.log('Server has started on port:8080')
+app.listen(port, () => {
+  console.log('Server has started on port' + port)
 })
 yargs.parse()
