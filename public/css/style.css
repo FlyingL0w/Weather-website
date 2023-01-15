@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: #f1f1f1;
 }
 
 #lat-long {
@@ -25,6 +26,10 @@ body {
 #main {
   border: 1px solid #a9a9a9;
   padding: 8px;
+}
+
+#meimg {
+  max-width: 400px;
 }
 
 button {
