@@ -23,7 +23,8 @@ hbs.registerPartials(partialsPath)
 
 // Set static
 app.use(express.static(root))
-const port = peocess.env.PORT || 8080
+
+const port = process.env.PORT || 8080
 
 // Start call
 app.get('', (req, res) => {
